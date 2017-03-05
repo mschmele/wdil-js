@@ -2,7 +2,6 @@
 require('dotenv').config()
 
 module.exports = {
-
   development: {
     client: 'mysql2',
     connection: {
@@ -49,4 +48,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-};
+}

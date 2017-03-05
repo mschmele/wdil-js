@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "cd client && npm start",
+    "lint": "standard",
     "server": "node server.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "start-dev": "concurrently \"nodemon server.js\" \"npm run client\"",
@@ -14,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "basic-auth": "^1.1.0",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.0",
     "dotenv": "^4.0.0",
@@ -22,6 +24,7 @@
     "mysql2": "^1.2.0"
   },
   "devDependencies": {
-    "concurrently": "^3.4.0"
+    "concurrently": "^3.4.0",
+    "standard": "^9.0.0"
   }
 }

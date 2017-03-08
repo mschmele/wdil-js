@@ -6,7 +6,7 @@ const userRoutes = require('./lib/routes/user-routes')
 
 const app = express()
 
-app.use(bodyParser.json())
+app.use(bodyParser.json({ type: 'application/json' }))
 
 app.use('/users', userRoutes)
 

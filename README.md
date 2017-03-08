@@ -7,7 +7,9 @@
 ### Requirements
 
 * Node 7.6+ (for native async/await)
-*
+* Docker (or local MySQL)
+* Yarn
+
 
 ### Stack Summary
 

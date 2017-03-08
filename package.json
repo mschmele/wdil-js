@@ -6,6 +6,7 @@
   "scripts": {
     "client": "cd client && npm start",
     "lint": "standard",
+    "migrate": "knex migrate:latest",
     "server": "node server.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "start-dev": "concurrently \"nodemon server.js\" \"npm run client\"",

@@ -8,12 +8,8 @@ const app = express()
 
 app.use(bodyParser.json({ type: 'application/json' }))
 
-app.use('/users', userRoutes)
+app.use('/api/users', userRoutes)
 
-app.get('/', (request, response) => {
-  response.send('Hello world')
-})
-
-app.listen(3001, () => {
-  console.log('App listening on port 3001')
+app.listen(process.env.PORT, () => {
+  console.log(`App listening on port ${process.env.PORT}`)
 })
